@@ -1,0 +1,125 @@
+:root {
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  --very-dark: hsl(212, 21%, 14%);
+  --dark-grayish: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondary-color);
+  min-height: 90vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.container .image-1 {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 0 10px 10px 0;
+}
+
+.text {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.text h2 {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--dark-grayish);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text h1 {
+    font-size: 2rem;
+    width: 250px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Fraunces", sans-serif;
+}
+
+.text p {
+    color: var(--dark-grayish);
+    font-weight: 600;
+    width: 280px;
+    line-height: 1.6;
+}
+
+.span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.primary-span {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 600;
+}
+
+.secondary-span {
+    color: var(--dark-grayish);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.flex .btn {
+    background-color: var(--primary-color);
+    outline: 0;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

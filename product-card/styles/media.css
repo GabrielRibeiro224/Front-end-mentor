@@ -1,0 +1,29 @@
+@media screen and (max-width: 1600px) {
+    .container .image-2 {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .image-1{
+        display: none;
+    }
+
+    .container .image-2 {
+        opacity: 1;
+        width: 330px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .flex {
+        margin-right: 40px;
+    }
+}
