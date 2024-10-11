@@ -1,0 +1,160 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-800-2: hsl(332, 51%, 90%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  /* font-family: "Outfit", sans-serif; */
+  /* font-family: "Young Serif", serif; */
+  background-color: var(--stone-100);
+  transition: all 0.4s ease-in-out;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 640px;
+    padding: 30px;
+}
+
+.content img {
+    width: 636px;
+    height: 350px;
+    border-radius: 14px;
+}
+
+.content h1{
+    font-size: 30px;
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+}
+
+.content p{
+    margin-top: -4px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--stone-600);
+}
+
+.time {
+    background-color: var(--rose-800-2);
+    margin: 10px 20px;
+    border-radius: 14px;
+    font-family: "Outfit", sans-serif;
+}
+
+.time h3{
+    font-family: "Outfit", sans-serif;
+    color: var(--rose-800);
+    margin-left: -22px;    
+}
+
+.time li {
+    line-height: 2.2;
+    color: var(--stone-600);
+}
+
+.time li::marker {
+    color: var(--rose-800);
+    font-size: 1rem;
+}
+
+.time span {
+    font-weight: 600;
+    margin-left: 1.2rem;
+}
+
+.content .subtitle {
+    font-family: "Young Serif";
+    font-weight: 400;
+    color: var(--brown-800);
+    margin-bottom: -1px;
+}
+
+.ingredients {
+    font-family: "Outift", sans-serif;
+    margin-left: -18px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.ingredients li p {
+    margin-left: 22px;
+    font-weight: 300;
+}
+
+.ingredients li::marker {
+    color: var(--brown-800);
+}
+
+.instructions {
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+}
+
+.instructions span {
+    font-weight: 500;
+}
+
+.instructions li {
+    line-height: 1.8;
+    margin-left: -20px;
+    font-weight: 300;
+}
+
+.instructions li::marker {
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+.border {
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.content .paragraph {
+    margin-top: 20px;
+}
+
+.content .list-nutrition {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 28px;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.content .list-nutrition span {
+    color: var(--brown-800);
+    font-weight: 600;
+}

@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #fff;
+    }
+    .content {
+        border-radius: 0;
+        width: 320px;
+    }
+    .content img {
+        width: 380px;
+        height: 200px;
+        margin: -30px -30px;
+        border-radius: 0;
+    }
+
+    .content .time {
+        width: 280px;
+        margin-left: -1px;
+        text-align: start;
+    }
+
+    .content h1 {
+        margin-top: 60px;
+    }
+
+    .content p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);;
+        line-height: 1.4;
+    }
+
+    .content .nutritional {
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+
+    .content .list-nutrition {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+}
