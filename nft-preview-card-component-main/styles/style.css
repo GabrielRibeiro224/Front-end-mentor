@@ -1,0 +1,137 @@
+:root {
+  --main-color: hsl(217, 54%, 11%);
+  --card-color: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan-color: hsl(178, 100%, 50%);
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  border-radius: 20px;
+  background-color: var(--card-color);
+}
+
+.icon {
+  content: "";
+  position: absolute;
+  top: 17rem;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.card .img-1 {
+  width: 320px;
+  height: 320px;
+  margin-top: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .img-1:hover {
+  border-radius: 30px;
+  background-color: cyan;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.card .text h2 {
+  margin-top: -5px;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.card .text h2:hover {
+  color: var(--cyan-color);
+  cursor: pointer;
+}
+
+.card .text p {
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.icon-2 .number svg {
+  margin-right: 5px;
+}
+
+.space-beetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-beetween .number {
+  color: var(--cyan-color);
+  font-weight: 700;
+}
+
+.space-beetween .days {
+  color: var(--soft-blue);
+  font-weight: 400;
+}
+
+.space-beetween .days i {
+  margin-right: 8px;
+  margin-top: 3px;
+  font-size: 1rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  border-top: 1px solid var(--soft-blue);
+}
+
+.user img {
+  width: 40px;
+  border: 2px solid var(--white-color);
+  border-radius: 100%;
+}
+
+.user p {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.user span {
+  color: var(--white-color);
+}
+
+.user span:hover {
+  color: var(--cyan-color);
+  cursor: pointer;
+}
