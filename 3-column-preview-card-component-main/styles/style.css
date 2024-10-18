@@ -1,0 +1,93 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --very-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  max-width: 820px;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 36px;
+}
+
+.card img {
+  width: 50px;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.card p {
+    font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.container .one,
+.one a {
+  color: hsl(31, 77%, 52%);
+  background: var(--orange);
+  border-radius: 8px 0 0 8px;
+}
+
+.container .two,
+.two a {
+  color: hsl(184, 100%, 22%);
+  background: var(--cyan);
+}
+
+.container .three,
+.three a {
+  color: hsl(179, 100%, 13%);
+  background: var(--very-cyan);
+  border-radius: 0 8px 8px 0;
+}
+
+.card a {
+  text-decoration: none;
+  background: hsl(0, 0%, 95%);
+  width: fit-content;
+  padding: 12px 34px;
+  margin-top: 60px;
+  border-radius: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card a:hover {
+  outline: 1px solid;
+  background: transparent;
+  transform: translateY(-10px);
+  color: #fff;
+}
