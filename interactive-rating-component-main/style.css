@@ -1,0 +1,144 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    font-family: inherit;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.main-container, .thank-you {
+    background-color: var(--Dark-blue);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    max-width: 400px;
+}
+
+.main-container img {
+    background-color: hsl(213, 20%, 23%);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main-container h1 {
+    color: #fff;
+    margin: 2rem 0 1rem;
+}
+
+.main-container p {
+    color: var(--Light-Grey);
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.main-container ul li button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    padding-top: 0.2rem;
+    color: #fff;
+    background-color: hsl(213, 20%, 23%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container ul li button:hover {
+    background-color: var(--Orange);
+}
+
+.main-container ul li button:focus {
+    background-color: var(--Light-Grey);
+}
+
+.btn-submit {
+    font-size: 1rem;
+    background-color: var(--Orange);
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 0 0.6rem;
+    border-radius: 30px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: var(--Orange);
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you p.gray {
+    font-size: 1rem;
+    color: var(--Orange);
+    background-color: hsl(213, 20%, 23%);
+    border-radius: 30px;
+    padding: 0.1rem 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.thank-you h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.thank-you p {
+    color: var(--Light-Grey);
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
