@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  line-height: 1;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-weight: 300;
+}
+
+.cabecalho nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.cabecalho nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cabecalho li:last-child a {
+  border: 2px solid blueviolet;
+  padding: 10px 22px;
+  border-radius: 16px;
+}
+
+.cabecalho li:last-child a:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+aside h2 {
+  font-size: 50px;
+  line-height: 1;
+}
+
+aside .rose {
+  color: blueviolet;
+}
+
+aside p {
+  margin-top: 20px;
+  font-size: 14px;
+  width: 440px;
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+input {
+  padding: 14px 10px;
+  margin: 8px 0;
+  width: 330px;
+  border-radius: 18px;
+  border: none;
+}
+
+.btn {
+  width: 160px;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: rgb(102, 34, 165);
+}
